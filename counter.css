@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right,crimson,#182848);
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 40vw;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 1.4rem;
+    background-color: lavender;
+    border-radius: 1.8rem;
+}
+
+.title {
+    font-size: 4rem;
+    color: black;
+}
+
+.value {
+    font-size: 6rem;
+    margin: 1rem;
+    color: black;
+}
+
+.buttons {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    font-size: 2rem;
+    padding: 0.6rem;
+    margin: 0.4rem;
+    border: none;
+    border-radius: 50%;
+    background-color:white;
+    color: black;
+}
+
+/*For Small Devices */
+
+@media only screen and (max-width: 768px) {
+    
+    .container{
+        min-width: 75vw;
+    }
+
+    .buttons{
+        justify-content: center;
+    }
+}
